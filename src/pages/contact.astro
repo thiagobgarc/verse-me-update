@@ -1,7 +1,11 @@
 ---
-
+import Layout from "../layouts/Layout.astro"
+import Main from "../components/Main.astro"
+import Contact from "../components/contact-page/Contact"
 ---
 
-<div>
-    <h1>Contact</h1>
-</div>
+<Layout title="Contact">
+    <Main>
+        <Contact client:load/>
+    </Main>
+</Layout>
