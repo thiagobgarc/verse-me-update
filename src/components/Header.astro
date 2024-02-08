@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets"
+import Logo from "./public/logo.svg"
+
+export interface Props {
+    home: string,
+    about: string,
+    contact: string,
+}
+
+const { home, about, contact } = Astro.props
+
+---
+
+<header class="flex items-center justify-around py-5 px-5 max-sm:px-5 max-w-7xl w-full mx-auto ">
+    <a href="/" class="flex items-center gap-x-4">
+        <img src="../public/360_F_96683737_rm2HQMEXTHoIHV9Fd4Jj6z8J2fiLvT7c.jpg" alt="Verse Me Logo" class="w-10 h-10 rounded-full items-start shadow showdow-4xl shadow-[#000000] transition-shadow  animate-pulse animate-duration-[10s] animate-iteration-infinite" 
+        class="breathing"
+        />
+        <p class="text-3xl uppercase text-zinc-700">Verse Me</p>
+    </a>
+    <ul class="flex gap-x-8">
+        <li><a href="/">{home}</a></li>
+        <li><a href="/about">{about}</a></li>
+        <li><a href="/contact">{contact}</a></li>
+    </ul>
+</header>
