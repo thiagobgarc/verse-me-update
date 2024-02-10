@@ -1,7 +1,11 @@
 ---
-
+import Layout from "../layouts/Layout.astro"
+import Main from "../components/Main.astro"
+import Search from "../components/search/Search"
 ---
 
-<div>
-    <h1>Search</h1>
-</div>
+<Layout title="Bible Search">
+    <Main>
+        <Search/>
+    </Main>
+</Layout>

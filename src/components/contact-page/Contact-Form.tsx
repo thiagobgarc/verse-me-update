@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 
 const ContactForm = () => {
   return (
-    <motion.div className='flex flex-col items-center justify-center mt-[5rem]' initial={{ y: 0, opacity: 0 }} animate={{ y:25, opacity: 1 }} transition={{ duration: .8 }}>
-        <form action="/contact" method="post" className='flex flex-col items-center justify-center space-y-4'>
+    <motion.div className='flex flex-col items-center justify-center mt-[5rem] border-2' initial={{ y: 0, opacity: 0 }} animate={{ y:25, opacity: 1 }} transition={{ duration: .8 }}>
+        <form action="/contact" method="post" className='flex flex-col items-center justify-center space-y-4 py-5'>
 
                 <input type="text" id="name" name="name" required placeholder='Your Name' className='border-2 border-black rounded px-5 py-1' maxLength={50}/>
             
@@ -14,7 +14,7 @@ const ContactForm = () => {
             
             
             <textarea id="message" name="message" required placeholder='Your Message' className='h-[9rem] border-2 border-black rounded pt-2 px-5' maxLength={500} />
-            <button type="submit" className='text-[#000000] border-solid border-[.25rem] border-[#000000] border-padding px-2 py-1 shadow-2xl shadow-[#000000] transition-shadow ease-in-out rounded text-xl text-bolder transform hover:scale-105'>Submit</button>
+            <button type="submit" className='text-[#000000] border-solid border border-[#000000] border-padding px-2 py-1 shadow-2xl shadow-[#000000] transition-shadow ease-in-out rounded text-xl text-bolder transform hover:scale-105 bg-gradient-to-br from-gray-300 to-gray-500'>Submit</button>
         </form>
     </motion.div>
   )
