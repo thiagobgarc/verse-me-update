@@ -12,7 +12,7 @@ const Card = ({title, content, text}: CardProps) => {
   return (
     <div>
         <motion.div className="overflow-hidden border border-gray-300 rounded-lg transition-all duration-500 hover:h-auto hover:scale-105 bg-gradient-to-br from-gray-300 to-gray-500" 
-    initial={{ y: 0, opacity: 0 }} animate={{ y:25, opacity: 1 }} transition={{ duration: .5 }}>
+    initial={{ y: 0, opacity: 0 }} animate={{ y:25, opacity: 1 }} transition={{ duration: .6 }}>
     <div className="p-4">
     <h3 className='text-2xl font-bold mb-4'>{title}</h3>
     <div className="h-0 opacity-0 transition-all duration-500 hover:h-auto hover:opacity-100">

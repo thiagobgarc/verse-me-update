@@ -1,7 +1,11 @@
 ---
-
+import Layout from "../layouts/Layout.astro"
+import Main from "../components/Main.astro"
+import About from "../components/about/About"
 ---
 
-<div>
-    <h1>About</h1>
-</div>
+<Layout title="About Us">
+    <Main>
+        <About client:load/>
+    </Main>
+</Layout>
